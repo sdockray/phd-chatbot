@@ -1,7 +1,7 @@
 // The ConversationPanel module is designed to handle
 // all display and behaviors of the conversation column of the app.
 /* eslint no-unused-vars: "off" */
-/* global Api: true, Common: true*/
+/* global Api: true, Common: true, Phd: true*/
 
 var ConversationPanel = (function () {
   var settings = {
@@ -126,6 +126,7 @@ var ConversationPanel = (function () {
     //var textExists = newPayload.generic;
     if ((newPayload.output && newPayload.output.generic) ||  newPayload.input){
       // Create new message generic elements
+      Phd.handlePayload(newPayload);
       var responses = buildMessageDomElements(newPayload, isUser);
       var chatBoxElement = document.querySelector(settings.selectors.chatBox);
       var previousLatest = chatBoxElement.querySelectorAll((isUser ? settings.selectors.fromUser : settings.selectors.fromWatson) +

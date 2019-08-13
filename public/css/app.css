@@ -464,3 +464,19 @@ html{
   cursor: pointer;
   display: inline-block;
 }
+
+/* PhD stuff */
+#lookCloser {
+  display: none;
+  position: absolute;
+}
+
+iframe#video-always-learning {
+  height:50% !important;
+  width: 400px;
+}
+
+iframe#video-s2t {
+  width:50% !important;
+  height: 400px;
+}
