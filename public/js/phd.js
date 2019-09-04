@@ -56,9 +56,9 @@ var Phd = (function() {
           console.log("confidence = ", confidence);
           console.log("entity = ", artwork_entity);
           if (artwork_entity == 'always learning') {
-          	playAlwaysLearning(viewerElement);
+          	//playAlwaysLearning(viewerElement);
           } else if (artwork_entity == 's2t') {
-          	playS2T(viewerElement);
+          	//playS2T(viewerElement);
           }
         }
       }
