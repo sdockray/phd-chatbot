@@ -159,7 +159,7 @@ var ConversationPanel = (function () {
       } else {
         var userTypringField = document.getElementById('user-typing-field');
         if (res.typing) {
-          userTypringField.innerHTML = 'Watson Assistant Typing...';
+          userTypringField.innerHTML = 'Sean Dockray Typing...';
         }
         setTimeout(function () {
           userTypringField.innerHTML = '';
@@ -313,7 +313,8 @@ var ConversationPanel = (function () {
 
   // Scroll to the bottom of the chat window
   function scrollToChatBottom() {
-    var scrollingChat = document.querySelector('#scrollingChat');
+    // var scrollingChat = document.querySelector('#scrollingChat');
+    var scrollingChat = document.querySelector('#scrollingChatContainer');
     scrollingChat.scrollTop = scrollingChat.scrollHeight;
   }
 
