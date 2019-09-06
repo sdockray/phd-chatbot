@@ -34,12 +34,12 @@ var PayloadPanel = (function() {
   // full width (regardless of screen size)
   function togglePanel(event, element) {
     var payloadColumn = document.querySelector(settings.selectors.payloadColumn);
-    if (element.classList.contains('full')) {
-      element.classList.remove('full');
-      payloadColumn.classList.remove('full');
+    if (element.classList.contains('open')) {
+      element.classList.remove('open');
+      payloadColumn.classList.remove('open');
     } else {
-      element.classList.add('full');
-      payloadColumn.classList.add('full');
+      element.classList.add('open');
+      payloadColumn.classList.add('open');
     }
   }
 
@@ -57,10 +57,13 @@ var PayloadPanel = (function() {
       currentResponsePayloadSetter.call(Api, newPayload);
       displayPayload(settings.payloadTypes.response);
     };
+
+
   }
 
   // Display a request or response payload that has just been sent/received
   function displayPayload(typeValue) {
+    /*
     var isRequest = checkRequestType(typeValue);
     if (isRequest !== null) {
       // Create new payload DOM element
@@ -80,6 +83,7 @@ var PayloadPanel = (function() {
         payloadInitial.classList.add('hide');
       }
     }
+    */
   }
 
   // Checks if the given typeValue matches with the request "name", the response "name", or neither

@@ -21,8 +21,8 @@ div {
 }
 
 #view-change-button {
-  /* display: inline-block; */
-  display: none;
+  display: inline-block; 
+  /*display: none;*/
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -41,11 +41,11 @@ div {
   vertical-align: middle;
 }
 
-#view-change-button:not(.full) .not-full {
+#view-change-button:not(.open) .not-open {
   display: inline-block;
 }
 
-#view-change-button.full .full {
+#view-change-button.open .open {
   display: inline-block;
 }
 
@@ -287,6 +287,10 @@ input:-moz-placeholder {
   display: none;
 }
 
+#payload-column.open {
+  display: block;
+}
+
 #payload-column.full {
   width: 100%;
   max-width: none;
@@ -301,6 +305,12 @@ input:-moz-placeholder {
   padding: 0.5rem;
   padding-left: 2.5rem;
   background: #383D3E;
+}
+
+#payload-column .link {
+  color:yellow;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .hide {
@@ -358,6 +368,7 @@ html{
     max-width: none;
     min-width: initial;
   }
+
 }
 
 /* IBM Design fonts https://github.ibm.com/Design/fonts */
