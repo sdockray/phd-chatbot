@@ -159,7 +159,7 @@ var ConversationPanel = (function () {
       } else {
         var userTypringField = document.getElementById('user-typing-field');
         if (res.typing) {
-          userTypringField.innerHTML = 'Sean Dockray Typing...';
+          userTypringField.innerHTML = 'Sean Dockray typing...';
         }
         setTimeout(function () {
           userTypringField.innerHTML = '';

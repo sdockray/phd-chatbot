@@ -14,7 +14,7 @@
 <body>
   <div id="view-change-button" class="button" onclick="PayloadPanel.togglePanel(event, this)">
     <img class="option open" src="../img/Chat Button.png">
-    <img class="option not-open" src="../img/Code Button.png">
+    <img class="option not-open" src="../img/Help Button.png">
   </div>
   <div id="contentParent" class="responsive-columns-wrapper">
     <div id="chat-column-holder" class="responsive-column content-column">
@@ -38,7 +38,7 @@
           <div class="code-line responsive-columns-wrapper">
             <div class="payload-text responsive-column">
               <p>
-              The links below will ask the chatbot for the different projects done throughout the research.
+              Clicking on the links below will ask the chatbot for the different projects done throughout the research.
               </p>
               <p>
                 --------
@@ -48,19 +48,30 @@
           <div class="code-line responsive-columns-wrapper">
             <div class="payload-text responsive-column">
               <span class="link" onclick="ConversationPanel.sendMessage('i want to view ai commune')">AI-Commune</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('i want to view ai commune')">i. installation</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('can i see the ai commune lecture performance?')">ii. lecture</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('show me s2t')">s2t</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('play the s2t performance')">i. performance</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('show me the s2t publication')">ii. publication</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('let me see the stenographers memorial')">Stenographers Memorial</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('let me see the stenographers memorial')">i. memorial</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('can i see the stenographers memorial performance')">ii. performance</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('play always learning')">Always Learning</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('show me the always learning installation')">i. installation</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('view the always learning performance')">ii. performance</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('show me learning from youtube')">Learning from YouTube</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('show me learning from youtube')">i. video</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('can i read the learning from youtube essay?')">ii. essay</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('show me ontology')">Ontology</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('let me see adversarial uploads')">Adversarial Uploads</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('let me see adversarial uploads')">i. video</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('show me the fake news essay')">ii. Fake news, artificial intelligence, and data visualization</span><br/>
+              <span class="link tab" onclick="ConversationPanel.sendMessage('i want to read artificial imagination')">iii. Artificial imagination: deep fakes from latent space</span><br/>
               <span class="link" onclick="ConversationPanel.sendMessage('i want to see chorus')">Chorus</span><br/>
               <br/>
               <p>-------</p>
               <br/>
-              <span class="link" onclick="ConversationPanel.sendMessage('show me the fake news essay')">Fake news, artificial intelligence, and data visualization</span><br/>
-              <span class="link" onclick="ConversationPanel.sendMessage('i want to read artificial imagination')">Artificial imagination: deep fakes from latent space</span><br/>
-              
+              Sean Dockray
             </div>
           </div>
           

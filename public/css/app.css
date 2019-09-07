@@ -313,6 +313,10 @@ input:-moz-placeholder {
   font-weight: bold;
 }
 
+#payload-column .tab {
+  margin-left: 1.0rem;
+}
+
 .hide {
   display: none;
 }
